@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Signika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+  @apply font-body text-slate-500 text-lg hover:text-white hover:bg-green-500 px-4 py-2 hover:rounded-full transform ease-linear duration-300;
+}
+.buttonStyle{
+  @apply font-body border border-slate-300 py-2 px-2 md:w-full rounded-full transform hover:scale-110 duration-200 my-3 md:my-0 m-2  
 }
